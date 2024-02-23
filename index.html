@@ -3,75 +3,12 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="main.css">
-<style>
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0; left:0;
-  min-width: 100%;
-  min-height: 100%;
-}
-
-/* Add some content at the bottom of the video/page */
-.content {
-  position: fixed;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  padding:0;
-margin:0; left:0;padding-bottom:1em;
-}
-
-/* Style the button used to pause/play the video */
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: crimson;
-  color: #fff;
-  cursor: pointer; border-radius:0.5em;font-weight:bold;
-
-}
-
-#myBtn:hover {
-  background: gold;
-  color: black;
-}
-</style>
-<script>
-// Get the video
-var video = document.getElementById("myVideo");
-
-// Get the button
-var btn = document.getElementById("myBtn");
-var mtext = document.getElementById("mtext");  
-
-// Pause and play the video, and change the button text
-function myFunction() {
-document.getElementById("myBtn").style.display="none";
-document.getElementById("mtext").style.display="block";
-document.getElementById("myVideo").play();
-
-}
-</script>
 </head>
-<body style="text-align:center;background:url('burger.jpg');">
- <!-- The video -->
-<video autoplay muted loop id="myVideo" style="display:none;">
-  <source src="" type="video/mp4">
-</video>
-
-<!-- Optional: some overlay text to describe the video -->
-<div class="content">
+<body style="text-align:center;">
+<img src="burger.jpg" style="width:100%;">
   <h1>D.S.R Stars</h1>
-<h2 style="color:wheat;font-weight:normal;">Food and Travel Magazine</h2>
-<a id="myBtn"  style="text-decoration:none;padding: 0.5em 1em;"  href="home.html">Enter</a>
-  <div id="mtext" style="display:none;">
-  </div>
-
-  <!-- Use a button to pause/play the video with JavaScript -->
-</div> 
+<h2 style="color:maroon;font-weight:normal;">Food and Travel Magazine</h2>
+<div style="margin:1em 0;padding:2em 0;"><a id=""  style="width:10em; border-radius:1em; background-color:crimson;color:white;text-decoration:none;padding: 0.5em 1em;font-weight:bold;"  href="home.html">Enter</a>
+</div>
 </body>
 </html>
