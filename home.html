@@ -3,8 +3,24 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="main.css">
+<script type="text/javascript">
+function doffer()
+  {
+  const d = new Date();
+let diff = d.getTimezoneOffset();
+  if (diff == -330) { 
+document.getElementById('ind').style.display="block";
+document.getElementById('inter').style.display="none";
+  } else { 
+document.getElementById('inter').style.display="block";
+document.getElementById('ind').style.display="none";
+  }
+  } 
+</script>
+
+
 </head>
-<body style="text-align:center;">
+<body onload="doffer();" style="text-align:center;">
     <h1 style="text-align:center;background-color:black;color:white;padding:1em;"><apan style="color:gold;">D.S.R Stars</span><br><apan style="color:white;font-size:large;">World Magazine</span></h1>
 
 <div class="row" style="background:url('un.jpg');">
@@ -35,14 +51,23 @@ TN02A0069065
 </h3>
 
 <div style="padding:0;text-align:center;">
+<div id="ind">
+<ul style="text-align:left;">
+<li>Shopping at D.S.R brings good fortune to the buyer</li>
+<li>High-end arts, fashion, cultural collectibles</li>
+<li>Sacred objects that attract positive energies and repel negative energies</li>
+<li>High quality, one of a kind sweet boxes</li>
+<li>Prasadams from powerful temples</li>
+</ul>
+</div>
+<div id="inter">
 <ul style="text-align:left;">
 <li>Shopping at D.S.R brings good fortune to the buyer</li>
 <li>High-end arts, fashion, cultural collectibles</li>
 <li>World's best products from India</li>
 <li>Sacred objects that attract positive energies and repel negative energies</li>
-<li>High quality, one of a kind sweet boxes</li>
-<li>Prasadams from powerful temples</li>
 </ul>
+</div>
 </div>
 <div  style="text-align:center;padding:0.5em;">
 <a style="color:white;text-decoration:none;" href="shop.html"><h3 style="background-color:crimson;color:white; text-align:center;display:inline-block;border-radius: 10px;cursor:pointer;width:12em;padding:1em 0.5em;margin:0.5em;"><span style="font-size:large;text-decoration:none;">&#128070; </span>Shop Now</h3></a>

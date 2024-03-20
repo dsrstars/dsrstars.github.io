@@ -3,8 +3,25 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="main.css">
+<script type="text/javascript">
+function doffer()
+  {
+  const d = new Date();
+let diff = d.getTimezoneOffset();
+  if (diff == -330) { 
+document.getElementById('ind').style.display="block";
+document.getElementById('inter').style.display="none";
+
+  } else { 
+document.getElementById('inter').style.display="block";
+document.getElementById('ind').style.display="none";
+
+  }
+  } 
+</script>
+
 </head>
-<body style="text-align:center;">
+<body onload="doffer();" style="text-align:center;">
     <h1 style="text-align:center;background-color:black;color:white;padding:1em;"><apan style="color:gold;">D.S.R Stars</span><br><apan style="color:white;font-size:large;">World Magazine</span></h1>
 <div  style="background:url('burger.jpg');">
 <div style="padding:1em;width:fit-content;background-color:lavender;text-align:center;margin:0 auto;border-radius:1em;"><a href="home.html">Home</a></div>
@@ -35,8 +52,7 @@
 <h3>How to subscribe ?</h3>
 <div style="padding:0em;">
 <div style="">
-<ol  style="text-align:left;"><li>Select a subscription plan</li><li>Pay the corresponding amount via bank A/c Transfer, UPI ID : 7010342306@upi through any UPI app like Bhim UPI, google pay, paytm, phonepe or eMoney order</li><li>Email us your Name, Age, Gender, City &  Occupation along with payment confirmation.</li>
-<li>Email us for our bank A/c details</li>
+<ol  style="text-align:left;"><li>Select a subscription plan</li><li>For payment instructions email us your name, age, gender, city &  occupation.</li>
 <li>Gold coins winners are also chosen by lottery and is open only to D12, P12, DP12 & above plans </li>
 </ol>
 </div>
@@ -47,11 +63,20 @@
 <h3 style="font-weight:normal;">Digital Format</h3>
 <div style="display:inline-block;">
 <div style="background-color:green;color:white;padding:0.5em;"><div style="display:inline-block;width:4em;background-color:green;color:white;text-align:left;">Plan</div><div style="display:inline-block;width:6em;text-align:center;"> # Issues</div><div style="display:inline-block;width:6em;text-align:left;">Price</div></div>
+<div id="ind">
 <div style="text-align-left;"><div style="display:inline-block;width:4em;text-align:left;">D6</div><div style="display:inline-block;width:6em;text-align:center;">6</div><div style="display:inline-block;width:6em;text-align:left;">Rs 3600</div></div>
 <div><div style="display:inline-block;width:4em;text-align:left;">D12</div><div style="display:inline-block;width:6em;text-align:center;">12</div><div style="display:inline-block;width:6em;text-align:left;">Rs 7200</div></div>
 <div><div style="display:inline-block;width:4em;text-align:left;">D24</div><div style="display:inline-block;width:6em;text-align:center;">24</div><div style="display:inline-block;width:6em;text-align:left;">Rs 14400</div></div>
 <div><div style="display:inline-block;width:4em;text-align:left;">D36</div><div style="display:inline-block;width:6em;text-align:center;">36</div><div style="display:inline-block;width:6em;text-align:left;">Rs 21600</div></div>
 <div><div style="display:inline-block;width:4em;text-align:left;">D48</div><div style="display:inline-block;width:6em;text-align:center;">48</div><div style="display:inline-block;width:6em;text-align:left;">Rs 28800</div></div>
+</div>
+<div id="inter">
+<div style="text-align-left;"><div style="display:inline-block;width:4em;text-align:left;">D6</div><div style="display:inline-block;width:6em;text-align:center;">6</div><div style="display:inline-block;width:6em;text-align:left;">US $120</div></div>
+<div><div style="display:inline-block;width:4em;text-align:left;">D12</div><div style="display:inline-block;width:6em;text-align:center;">12</div><div style="display:inline-block;width:6em;text-align:left;">US $240</div></div>
+<div><div style="display:inline-block;width:4em;text-align:left;">D24</div><div style="display:inline-block;width:6em;text-align:center;">24</div><div style="display:inline-block;width:6em;text-align:left;">US $480</div></div>
+<div><div style="display:inline-block;width:4em;text-align:left;">D36</div><div style="display:inline-block;width:6em;text-align:center;">36</div><div style="display:inline-block;width:6em;text-align:left;">US $600</div></div>
+<div><div style="display:inline-block;width:4em;text-align:left;">D48</div><div style="display:inline-block;width:6em;text-align:center;">48</div><div style="display:inline-block;width:6em;text-align:left;">US $720</div></div>
+</div>
 </div>
 
 <h3 style="color:purple;">Support</h3>
